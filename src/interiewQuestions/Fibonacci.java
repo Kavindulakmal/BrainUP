@@ -15,7 +15,7 @@ public class Fibonacci {
 			num1 =num2;
 			num2 =num3;
 			
-			counter+=1;
+			counter+=1;  //counter=counter+1;
 		}
 		
 	}
