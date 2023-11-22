@@ -1,0 +1,32 @@
+package pattern;
+/*
+ * output should be 
+ * 		  1
+        1   1
+      1   2   1
+    1   3   3   1
+  1   4   6   4   1
+ */
+
+public class PatternPascal {
+
+	public static void main(String[] args)
+	   {
+	      int row=5, i, j, space, num;
+	      for(i=0; i<row; i++)
+	      {
+	         for(space=row; space>i; space--)
+	         {
+	            System.out.print(" ");
+	         }
+	         num=1;
+	         for(j=0; j<=i; j++)
+	         {
+	            System.out.print(num+ " ");
+	            num = num*(i-j)/(j+1);
+	         }
+	         System.out.print("\n");
+	      }
+	   }
+	}
+
